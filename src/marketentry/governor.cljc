@@ -19,13 +19,29 @@
   human sign-off'; 'a false or fabricated regulatory-requirement claim
   is a HARD hold') names exactly the checks below.
 
-  Six checks, in priority order, ALL HARD violations: a human
+  Seven checks, in priority order, ALL HARD violations: a human
   approver CANNOT override them. The confidence/actuation gate is
   SOFT: it asks a human to look (low confidence / actuation), and the
   human may approve -- but see `marketentry.phase`: for `:stake
   :actuation/draft-filing`/`:actuation/submit-filing` NO phase ever
   allows auto-commit either. Two independent layers agree that
   actuation is always a human call.
+
+  (Corrected 2026-07-23: this docstring previously said 'Six checks',
+  which undercounted -- `check` below actually concatenates SEVEN
+  hard-violation-producing functions: items 1-5 in the numbered list
+  (item 6, the confidence/actuation gate, is the SOFT one, not a hard
+  check) plus the two double-actuation guards described at the bottom
+  of this docstring. COD genuinely grounds TWO distinct jurisdiction-
+  specific hard checks -- preference-tier-mismatch (item 3, Loi
+  n°10/010 Art. 37) AND nif-unverified (item 5, DGI's NIF) -- the same
+  shape as `cloud-itonami-iso3166-mli`'s SEVEN-check governor (RCCM-
+  entity-missing + nif-unverified), not the six-check shape of
+  `cloud-itonami-iso3166-gnb`/-stp/-sdn, whose dossiers each grounded
+  only ONE jurisdiction-specific hard check. Seven is the honest count
+  here because the underlying research (see `marketentry.facts`)
+  independently verified NIF as a real, DGI-mandated tax id via DGI's
+  own site -- not because of any attempt to match a sibling's number.)
 
     1. Spec-basis                  -- did the jurisdiction proposal cite
                                        an OFFICIAL source

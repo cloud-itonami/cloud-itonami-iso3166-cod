@@ -1,6 +1,23 @@
 # cloud-itonami-iso3166-cod
 
-**COD**: Democratic Republic of the Congo.
+**COD**: Democratic Republic of the Congo (capital Kinshasa) --
+**NOT** the Republic of the Congo / Congo-Brazzaville (ISO code
+**COG**, capital Brazzaville, a separate country with its own separate
+public-procurement regulator, confusingly also abbreviated "ARMP", at
+`armp.cg`). Every regulatory citation in this repo (`src/marketentry/
+facts.cljc`, `organization.edn`) is `armp-rdc.cd`-domain / DRC-specific
+-- do not let a Congo-Brazzaville (COG) fact leak in here, and do not
+cite `armp.cg` from this repo. `:implemented` -- "Actors" pattern
+market-entry / public-procurement compliance service (Governor + LLM
+advisor + langgraph-clj StateGraph + append-only audit ledger + Store).
+**Seven** governor checks -- see `src/marketentry/governor.cljc` for
+why (two distinct jurisdiction-specific hard checks: the flagship
+Loi n°10/010 Art. 37 national/regional preference-tier recompute, and
+an independently-confirmed NIF/DGI tax-id check).
+
+```
+clojure -M:dev:test
+```
 
 - ARMP (Autorité de Régulation des Marchés Publics, Loi n°10/010 du 27
   avril 2010) public procurement -- ARMP itself operates the live
