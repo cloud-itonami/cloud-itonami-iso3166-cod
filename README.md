@@ -2,8 +2,18 @@
 
 **COD**: Democratic Republic of the Congo.
 
-- ARMP / COREF
-- RCCM/INSS
+- ARMP (Autorité de Régulation des Marchés Publics, Loi n°10/010 du 27
+  avril 2010) public procurement -- ARMP itself operates the live
+  e-procurement notice portal at `marche.armp-rdc.cd`; ex-ante control
+  is separately performed by DGCMP. Note: COREF (Comité d'Orientation
+  de la Réforme des Finances Publiques) is a real body but is a
+  broader public-finance-reform coordinator, NOT the procurement
+  regulator -- see `src/marketentry/facts.cljc` for why it is not
+  cited as `:owner-authority`.
+- RCCM company registration via the Guichet Unique de Création
+  d'Entreprise (GUCE, Décret n°12/045 du 1er novembre 2012) + NIF tax
+  registration (Direction Générale des Impôts, DGI); Loi n°10/010 Art.
+  37's 6-tier national/regional bid-evaluation preference gate
 
 AGPL-3.0-or-later.
 
