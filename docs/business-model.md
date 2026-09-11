@@ -8,7 +8,7 @@ Market-entry compliance for the Democratic Republic of the Congo.
   notice portal at `marche.armp-rdc.cd`; ex-ante procedural control
   ("contrôle a priori") is separately performed by the Direction
   Générale de Contrôle des Marchés Publics (DGCMP, Art. 13) (see
-  `src/marketentry/facts.cljc`)
+  `src/marketentry/facts.cljk`)
 - Guichet Unique de Création d'Entreprise (GUCE) company/business
   registration (RCCM immatriculation under OHADA's Acte Uniforme
   relatif au Droit Commercial Général, via a Notaire + Greffier
