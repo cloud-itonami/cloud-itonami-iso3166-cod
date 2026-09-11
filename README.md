@@ -16,7 +16,7 @@ Loi n°10/010 Art. 37 national/regional preference-tier recompute, and
 an independently-confirmed NIF/DGI tax-id check).
 
 ```
-clojure -M:dev:test
+kbb -M:dev:test
 ```
 
 - ARMP (Autorité de Régulation des Marchés Publics, Loi n°10/010 du 27
